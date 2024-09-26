@@ -18,7 +18,7 @@ html{
 body{
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 1.8;
 }
 
 h1,h2,h3{
@@ -34,7 +34,7 @@ h2{
     font-size: 5.8rem;
 }
 h3{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 a{
@@ -61,7 +61,7 @@ img{
     background-color: #111111;
     color: var(--blanco);
 }
-
+/* UTILIDADES */
 .text-center{
     text-align: center;
 }
@@ -96,12 +96,17 @@ img{
 .nombre-sitio{
 font-weight: 300;
 text-align: center;
-font-size: 3rem;
+font-size: 2.4rem;
 
 }
 @media (min-width: 768px){ 
     .nombre-sitio{
-        font-size: 4.5rem;
+        font-size: 3.6rem;
+    }
+}
+@media (min-width: 992px){ 
+    .nombre-sitio{
+        font-size: 5rem;
     }
 }
 .nombre-sitio span{
@@ -113,4 +118,15 @@ font-weight: 900;
     justify-content: space-between;
     align-items: center;
 }    
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 768px){ 
+    .contacto{
+
+    }
 }
