@@ -90,6 +90,12 @@ img{
         padding: 2rem 0 ;
     }
 }
+@media (min-width: 992px){ 
+    .header{
+        padding: 5rem 0 ;
+    }
+
+}
 .contenido-header{
     display: flex;
     flex-direction: column;
@@ -131,20 +137,23 @@ font-weight: 900;
 }
 
 .telefono{
-    
+    display: flex;
 }
 .telefono::before{
 content:'';
-display: block;
+display: block; 
+background-image: url(../img/telefono.png);
 width: 4rem;
 height: 4rem;
 background-repeat: no-repeat;
-background-image: url(../img/telefono.png);
+background-position: center center;
+margin-right: .5rem;
 } /*es un seudo elemento, si yo agrego algo acá, va a aparecer "antes" del telefono y no se puede seleccionar para agregar una frase tiene que ir con content:"" */
 .navegacion{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
+    text-align: center;
 }
 .navegacion a{
     padding: .5rem 2rem;
@@ -152,6 +161,8 @@ background-image: url(../img/telefono.png);
     &:hover{      
           background-color: rgb(255 255 255 /.5);
           border-radius: .8rem;
+          color: var(--negro);
+          font-weight: 700;
     }
 }
 @media (min-width: 992px){ 
@@ -160,6 +171,32 @@ background-image: url(../img/telefono.png);
     }
     
     .navegacion{
+        display: flex;
         flex-direction: row;
+    }
+}
+
+.slogan  {
+    text-align: center;   
+}
+.slogan h1{
+font-size: 3rem;
+margin: 0
+}
+.slogan p {
+    margin: 0;
+    line-height: 1;
+}
+@media (min-width: 768px){ 
+    .slogan{
+        text-align: right;
+    }
+    .slogan h1{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 992px){ 
+    .slogan h1{
+        font-size: 5rem;
     }
 }
