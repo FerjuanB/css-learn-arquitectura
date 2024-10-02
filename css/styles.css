@@ -200,3 +200,10 @@ margin: 0
         font-size: 5rem;
     }
 }
+
+/* Nosotros  */
+
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
